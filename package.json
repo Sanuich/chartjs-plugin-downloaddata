@@ -1,0 +1,35 @@
+{
+    "name": "chartjs-plugin-sasha",
+    "description": "Chart.js plugin sasha",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "devDependencies": {
+        "chart.js": "^3.4.0",
+        "chartjs-test-utils": "^0.3.0"
+    },
+    "files": [
+        "index.js",
+        "export-data.js"
+    ],
+    "homepage": "",
+    "keywords": [
+        "chart.js",
+        "plugin",
+        "label"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "module": "index.js",
+    "name": "chartjs-plugin-sasha",
+    "peerDependencies": {
+        "chart.js": "^3.0.0"
+    },
+    "scripts": {},
+    "version": "1.0.0",
+    "dependencies": {
+        "download-as-file": "^1.1.0"
+    }
+}
