@@ -16,7 +16,7 @@ Adds a hover button in the top right corner of the chart area
 
 ### Nova Chart JS (coroowicaksono/chart-js-integration)
 
-In order to use this plugin `coroowicaksono/chart-js-integration` package add these lines to `vendors/coroowicaksono/chart-js-integration/resources/jschart-js-integration.js`
+In order to use this plugin with `coroowicaksono/chart-js-integration` package add these lines to `vendors/coroowicaksono/chart-js-integration/resources/jschart-js-integration.js`
 
 <br>
 
