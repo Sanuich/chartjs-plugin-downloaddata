@@ -21,10 +21,8 @@
         "plugin",
         "download"
     ],
-    "license": "MIT",
     "main": "index.js",
     "module": "index.js",
-    "name": "chartjs-plugin-sasha",
     "peerDependencies": {
         "chart.js": "^3.0.0"
     },
