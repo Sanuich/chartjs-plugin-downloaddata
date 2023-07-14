@@ -19,7 +19,7 @@
     "keywords": [
         "chart.js",
         "plugin",
-        "label"
+        "download"
     ],
     "license": "MIT",
     "main": "index.js",
