@@ -1,34 +1,34 @@
 {
-    "name": "chartjs-plugin-sasha",
-    "description": "Chart.js plugin sasha",
-    "author": "Sanuich <sanuich@gmail.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Sanuich/chartjs-plugin-downloaddata.git"
-    },
-    "devDependencies": {
-        "chart.js": "^3.4.0",
-        "chartjs-test-utils": "^0.3.0"
-    },
-    "files": [
-        "index.js",
-        "export-data.js"
-    ],
-    "homepage": "",
-    "keywords": [
-        "chart.js",
-        "plugin",
-        "download"
-    ],
-    "main": "index.js",
-    "module": "index.js",
-    "peerDependencies": {
-        "chart.js": "^3.0.0"
-    },
-    "scripts": {},
-    "version": "1.0.0",
-    "dependencies": {
-        "download-as-file": "^1.1.0"
-    }
+  "name": "chartjs-plugin-downloaddata",
+  "description": "Chart.js plugin sasha",
+  "author": "Sanuich <sanuich@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sanuich/chartjs-plugin-downloaddata.git"
+  },
+  "devDependencies": {
+    "chart.js": "^3.4.0",
+    "chartjs-test-utils": "^0.3.0"
+  },
+  "files": [
+    "index.js",
+    "export-data.js"
+  ],
+  "homepage": "",
+  "keywords": [
+    "chart.js",
+    "plugin",
+    "download"
+  ],
+  "main": "index.js",
+  "module": "index.js",
+  "peerDependencies": {
+    "chart.js": "^3.0.0"
+  },
+  "scripts": {},
+  "version": "1.0.0",
+  "dependencies": {
+    "download-as-file": "^1.1.0"
+  }
 }
