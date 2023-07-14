@@ -1,10 +1,11 @@
 {
     "name": "chartjs-plugin-sasha",
     "description": "Chart.js plugin sasha",
+    "author": "Sanuich <sanuich@gmail.com>",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/Sanuich/chartjs-plugin-downloaddata.git"
     },
     "devDependencies": {
         "chart.js": "^3.4.0",
