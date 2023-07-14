@@ -24,6 +24,8 @@ In order to use this plugin with `coroowicaksono/chart-js-integration` package a
 `...`<br>
 `Chart.register(DownloadDataPackage);`
 
+Then run `npm run dev` from `vendors/coroowicaksono/chart-js-integration` folder
+
 ## Config
 
 buttonTitle: button title (default = Export)
