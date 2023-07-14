@@ -29,6 +29,9 @@ Then run `npm run dev` from `vendors/coroowicaksono/chart-js-integration` folder
 ## Config
 
 buttonTitle: button title (default = Export)
+top: top position [px] (default = 28)
+right: right position [px] (default = 26)
+opacity: background transparency from 0 to 1 (default = .4)
 
 ## Documentation
 
