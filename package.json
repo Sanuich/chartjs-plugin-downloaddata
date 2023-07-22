@@ -27,7 +27,7 @@
         "chart.js": "^3.0.0"
     },
     "scripts": {},
-    "version": "1.0.2",
+    "version": "1.0.3",
     "dependencies": {
         "download-as-file": "^1.1.0"
     }
