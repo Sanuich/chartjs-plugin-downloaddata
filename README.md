@@ -26,9 +26,19 @@ In order to use this plugin with `coroowicaksono/chart-js-integration` package a
 
 Then run `npm run dev` from `vendors/coroowicaksono/chart-js-integration` folder
 
+In the ChartCard add
+
+   `->options([`<br>
+       `...`<br>
+                `'plugins' => [`<br>
+                    `'download' => true`<br>
+                `]`<br>
+            `])`<br>
+`...`
+
 ## Config
 
-buttonTitle: button title (default = Export)
+buttonTitle: button title (default = &#128190 - disk html special char)
 top: top position [px] (default = 28)
 right: right position [px] (default = 26)
 opacity: background transparency from 0 to 1 (default = .4)

@@ -27,23 +27,35 @@ function exportData(card) {
             return '-' + chr}).substring(1);
     }
 
-    let csv = "label\\series"
-
-    for(const[key, serie] of Object.entries(series)) {
-        csv +=","+serie.label
+    let toCSV = function(array) {
+        return array.map(row => row.join(',')).join('\n')
     }
 
-    csv +="\n"
+    let csvArray = []
 
-    for (let i = 0; i < series[0].data.length; i++) {
-        csv += labels[i]
-        for (let j = 0; j < series.length; j++) {
-            let value = series[j].data[i] ?? '';
+    csvArray[0] = []
 
-            csv += "," + value
+    //top left
+    csvArray[0][0] = "label\\series";
+
+    //fill left column
+    for (let i = 0; i < labels.length; i++) {
+        csvArray[i+1] = [] //init
+        csvArray[i+1][0] = labels[i];
+    }
+
+    //each serie
+    for(const[serieKey, serie] of Object.entries(series)) {
+        csvArray[0].push(serie.label); //add title to head
+
+        let i = 0 //if the data is an Object and not Array
+        for(const[dataKey, value] of Object.entries(serie.data)) {
+            csvArray[i+1].push(value)
+            i++
         }
-        csv += "\n"
     }
+
+    let csv = toCSV(csvArray)
 
     let fileName = 'chart-export.csv'
     if(card.uriKey != undefined && card.uriKey != false) {
@@ -53,17 +65,7 @@ function exportData(card) {
             fileName = toDashCase(card.title) + '.csv'
         }
     }
-    /*
-    let url = window.URL.createObjectURL(new Blob([csv]))
-    let link = document.createElement('a')
-    link.href = url
-    link.setAttribute('download', fileName)
-    document.body.appendChild(link)
-    link.click()
-    link.remove()
-    window.URL.revokeObjectURL(url)
-    return true
-    */
+
     downloadAsFile({
         data: csv,
         filename: fileName
